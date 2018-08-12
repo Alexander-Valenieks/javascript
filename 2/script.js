@@ -13,13 +13,14 @@ let mainList = {
 
 for (let i = 0; i < 5; i++) {
 	let a = prompt("Какой тип товаров будем продавать?");
-	mainList.shopGoods[i] = a;
-	if ((typeof(a)) === 'string' && (typeof(a)) === null && a != '' && a.lenght < 50 ) {
+		
+	if ((typeof(a)) === 'string' && (typeof(a)) != null && a != '' && a.length < 50 ) {
 		console.log('Все верно!');
 		mainList.shopGoods[i] = a;
 	} else {
-	
+		i = i - 1;
 	}
+	  
 }
 /*
 while (i < 5) {
