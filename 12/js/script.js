@@ -323,5 +323,3 @@ let tab = document.getElementsByClassName('info-header-tab'),
 				});
 
 });
-
-
